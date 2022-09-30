@@ -15,15 +15,9 @@
   
   h1 {
     font-size: $header1;
+    padding-right:40rem;
   }
-  li,
-  button,
-  label,
-  input,
-  a,
-  p {
-    font-size: $text;
-  }
+
   h2 {
     font-size: $header2;
   }
@@ -37,14 +31,16 @@
 
   p{
     font-size: $header3;
+    
   }
   
   ul {
     list-style: none;
     font-size: $header2;
     
+    
   }
-  a {
+  a{
     text-decoration: none;
     color: white;
     
