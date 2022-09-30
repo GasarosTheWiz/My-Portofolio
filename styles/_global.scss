@@ -32,14 +32,21 @@
   }
   h4,
   h5 {
-    font-size: $header4;
+    font-size: $header3;
+  }
+
+  p{
+    font-size: $header3;
   }
   
   ul {
     list-style: none;
+    font-size: $header2;
+    
   }
   a {
     text-decoration: none;
+    color: white;
     
   }
   

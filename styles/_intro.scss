@@ -1,0 +1,31 @@
+.main-head{
+    
+    margin: 0 0 0 auto;
+    background: black;
+    position: sticky;
+    top:0%;
+    left:0%;
+}
+
+nav{
+    
+    min-height: 10vh;
+    width: 99%;
+    flex-wrap: wrap;
+    margin:auto;
+    align-items: center;
+    display: flex;
+    .logo{
+        @include flex(space-around,center,row);
+        h1{
+            margin:1rem;
+        }
+    }
+    ul{
+        @include flex(space-around,center,row);
+        flex: 1 1 40rem;
+
+    }
+
+
+}

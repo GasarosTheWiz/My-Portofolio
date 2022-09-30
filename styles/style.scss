@@ -1,7 +1,7 @@
 $header1: 2.5rem;
-$header2: 4rem;
-$header3: 2.5rem;
-$header4: 2rem;
+$header2: 2.3rem;
+$header3: 2rem;
+$header4: 1.5rem;
 $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $background-color: #161616;
@@ -9,11 +9,28 @@ $blue: rgb(81,35,229);
 $purple:rgb(140,32,229);
 $text: white;
 
-@mixin flex($justify, $align, $direction) {
+@mixin flex($justify, $align , $direction) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
-    flex-direction: $direction;
+    direction: $direction;
+    
 }
 
 @import "global";
+@import "intro";
+
+@media screen and (min-width: 1332px) {
+    html {
+      font-size: 53%;
+    }
+    .splash {
+      display: none;
+    }
+    svg {
+      width: 80%;
+    }
+    nav {
+      width: 100%;
+    }
+  }
