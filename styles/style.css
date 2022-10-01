@@ -13,6 +13,9 @@ body {
   background: #000000;
   color: white;
 }
+body .promo {
+  color: rgb(140, 32, 229);
+}
 
 h1 {
   font-size: 2.5rem;
@@ -27,8 +30,7 @@ h3 {
   font-size: 2rem;
 }
 
-h4,
-h5 {
+h4 {
   font-size: 2rem;
 }
 
@@ -46,10 +48,21 @@ a {
   color: white;
 }
 
+footer {
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18rem;
+}
+footer .gasaros {
+  font-family: "Petit Formal Script", cursive;
+}
+
 .main-head {
   margin: 0 0 0 auto;
   background: solid black;
-  top: 0%;
   left: 0%;
   position: relative;
 }
@@ -91,7 +104,7 @@ nav ul {
 }
 
 .hero-images {
-  padding-top: 5%;
+  padding-top: 2%;
   padding-left: 1%;
 }
 
@@ -137,6 +150,41 @@ nav ul {
     transform: rotateZ(360deg);
   }
 }
+.contract {
+  width: 90%;
+  min-height: 90vh;
+  text-align: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 15%;
+  padding-left: 10%;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  direction: row;
+  min-height: 10vh;
+  margin: 3%;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+.skillset {
+  width: 90%;
+  min-height: 90vh;
+  text-align: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.easy-to-catch {
+  padding: 5%;
+}
+
 @media screen and (max-width: 1100px) {
   h1 {
     font-size: 2.5rem;
@@ -150,6 +198,9 @@ nav ul {
   h1 {
     font-size: 2.5rem;
     padding: 0%;
+  }
+  .easy-to-catch {
+    padding: 15%;
   }
 }
 .intro-text,

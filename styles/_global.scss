@@ -11,6 +11,9 @@
     font-family: 'JetBrains Mono', monospace;
     background: $background-color;
     color: white;
+    .promo{
+      color:$purple;
+    }
   }
   
   h1 {
@@ -20,13 +23,14 @@
 
   h2 {
     font-size: $header2;
+
   }
   h3 {
     font-size: $header3;
   }
-  h4,
-  h5 {
+  h4 {
     font-size: $header3;
+
   }
 
   p{
@@ -43,5 +47,19 @@
     text-decoration: none;
     color: white;
     
+  }
+
+  footer{
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 18rem;
+
+    .gasaros{
+      font-family: 'Petit Formal Script' , cursive ;
+      
+    }
   }
   
