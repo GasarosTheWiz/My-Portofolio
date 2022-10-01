@@ -1,10 +1,10 @@
 .main-head{
     
     margin: 0 0 0 auto;
-    background: black;
-    position: sticky;
+    background: solid black;
     top:0%;
     left:0%;
+    position: relative;
 }
 
 nav{
@@ -28,17 +28,34 @@ nav{
     }
 }
 
-.intro {
+
+
+
+.hero{
     min-height: 90vh;
-    width: 90%;
-    margin: auto;
+    width: 95%;
+    margin: 0 0 0 auto;
+    display: flex;
     flex-wrap: wrap;
-    @include flex(space-between,center,row);
-    .intro-text{
-        padding-top: 20%;
-        text-align: right;
-        
-    }
+    overflow: hidden;
+    display: flex;
+    flex-direction:row;
+
+}
+
+.hero-images{
+    padding-top: 5%;
+    padding-left: 1%;
+}
+
+.hero-introduction{
+    position: relative;
+    text-align: right;
+    margin-top: 20%;
+    margin-left: 5%;
+    
+    
+
 }
 
 .active {
@@ -48,8 +65,22 @@ nav{
     border-radius: 1rem;
   }
 
-.intro-images{
-    position: relative;
-    height:0%;
-    width: 0%;
+.intro-images{ 
+    width: 0%;  
 }
+
+#clock-arrow {
+    animation: clock 1.5s infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom;
+  }
+  
+  @keyframes clock {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+

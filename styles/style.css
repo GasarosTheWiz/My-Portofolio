@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "JetBrains Mono", monospace;
-  background: #161616;
+  background: #000000;
   color: white;
 }
 
@@ -48,11 +48,10 @@ a {
 
 .main-head {
   margin: 0 0 0 auto;
-  background: black;
-  position: -webkit-sticky;
-  position: sticky;
+  background: solid black;
   top: 0%;
   left: 0%;
+  position: relative;
 }
 
 nav {
@@ -80,19 +79,27 @@ nav ul {
   flex: 1 1 40rem;
 }
 
-.intro {
+.hero {
   min-height: 90vh;
-  width: 90%;
-  margin: auto;
-  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 0 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
-.intro .intro-text {
-  padding-top: 20%;
+
+.hero-images {
+  padding-top: 5%;
+  padding-left: 1%;
+}
+
+.hero-introduction {
+  position: relative;
   text-align: right;
+  margin-top: 20%;
+  margin-left: 5%;
 }
 
 .active {
@@ -103,11 +110,33 @@ nav ul {
 }
 
 .intro-images {
-  position: relative;
-  height: 0%;
   width: 0%;
 }
 
+#clock-arrow {
+  -webkit-animation: clock 1.5s infinite linear;
+          animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 @media screen and (max-width: 1100px) {
   h1 {
     font-size: 2.5rem;
