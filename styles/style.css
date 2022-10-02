@@ -62,8 +62,12 @@ p:hover {
 }
 
 .promo h2:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   color: rgb(81, 35, 229);
+}
+
+.h2-move:hover {
+  transform: scale(1.2);
 }
 
 footer {
