@@ -24,6 +24,7 @@
 
   h2 {
     font-size: $header1;
+    
 
   }
   h3 {
@@ -56,12 +57,22 @@
   }
 
   .promo:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
-  h2:hover{
-    transform: scale(1.2);
+  .promo h2{
+    display: table-cell;
   }
+
+  .promo h2:hover{
+    
+      transform: scale(1.1);
+      color: $blue;
+    
+  }
+ 
+
+
 
 
   footer{
@@ -71,10 +82,12 @@
     flex-direction:row;
     justify-content: space-between;
     width: 18rem;
-
+    position: absolute;
+    bottom: 0;
     .gasaros{
       font-family: 'Petit Formal Script' , cursive ;
       
     }
   }
+
   
