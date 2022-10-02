@@ -13,6 +13,7 @@
     color: white;
     .promo{
       color:$purple;
+
     }
   }
   
@@ -22,7 +23,7 @@
   }
 
   h2 {
-    font-size: $header2;
+    font-size: $header1;
 
   }
   h3 {
@@ -32,10 +33,15 @@
     font-size: $header3;
 
   }
-
+ h5{
+  font-size: $header4;
+ }
   p{
     font-size: $header3;
-       
+    display: table-cell;
+
+    
+    
   }
   
   ul {
@@ -43,11 +49,20 @@
     font-size: $header2;
     
   }
-  a{
-    text-decoration: none;
-    color: white;
-    
+
+  p:hover{
+    transform: scale(1.8);
+    color: $purple;
   }
+
+  .promo:hover{
+    transform: scale(1.2);
+  }
+
+  h2:hover{
+    transform: scale(1.2);
+  }
+
 
   footer{
     font-size: 2rem;

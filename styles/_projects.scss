@@ -1,0 +1,49 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 4%;
+  }
+  .grid-item {
+
+    
+    font-size: 30px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color:white;
+    
+    }
+      
+  }
+
+  .zoom {
+    padding: 50px;
+    transition: transform .2s; 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5);
+    color: $purple;
+    a{
+        color: $purple;
+    }
+  }
+
+.hide{
+    display: none;
+    background-color: black;
+    position:absolute;
+    text-align:center;
+    
+} 
+
+.grid-item:hover + .hide{
+    display:block;
+    color:white;
+    text-align: center;
+}
+

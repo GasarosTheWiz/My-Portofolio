@@ -27,18 +27,22 @@ nav{
     }
 }
 
-
+a{
+    text-decoration: none;
+    color: white;
+    
+  }
 
 
 .hero{
     min-height: 90vh;
-    width: 95%;
     margin: 0 0 0 auto;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     display: flex;
     flex-direction:row;
+    padding-left: 3%;
 
 }
 
@@ -51,13 +55,11 @@ nav{
     position: relative;
     text-align: right;
     margin-top: 20%;
-    margin-left: 5%;
+    margin-left: 10%;
+    
         
 } 
-.promo{
-    
-    
-}
+
 
 .active {
     background: $blue;
@@ -66,9 +68,12 @@ nav{
     border-radius: 1rem;
   }
 
-.intro-images{ 
-    width: 0%;  
+
+.hero-images:hover{
+    transform: scale(1.1);
 }
+
+
 
 #clock-arrow {
     animation: clock 1.5s infinite linear;
@@ -76,6 +81,7 @@ nav{
     transform-origin: bottom;
   }
   
+
   @keyframes clock {
     from {
       transform: rotateZ(0deg);

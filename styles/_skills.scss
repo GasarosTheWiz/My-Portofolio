@@ -9,7 +9,20 @@
     
 }
 
-
+.html:hover,
+.css:hover,
+.javascript:hover,
+.java:hover,
+.visual-studio-code:hover,
+.intellij:hover,
+.github:hover,
+.linux:hover,
+.c:hover,
+.python:hover,
+.haskell:hover
+{
+    transform: scale(1.3);
+}
 
 .easy-to-catch{
     padding: 5%;
