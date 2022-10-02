@@ -54,11 +54,16 @@ p:hover {
 }
 
 .promo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
-h2:hover {
-  transform: scale(1.2);
+.promo h2 {
+  display: table-cell;
+}
+
+.promo h2:hover {
+  transform: scale(1.1);
+  color: rgb(81, 35, 229);
 }
 
 footer {
@@ -68,6 +73,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 18rem;
+  position: absolute;
+  bottom: 0;
 }
 footer .gasaros {
   font-family: "Petit Formal Script", cursive;
@@ -224,8 +231,9 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  padding: 4%;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .grid-item {
@@ -234,7 +242,7 @@ a {
 }
 .grid-item a {
   text-decoration: none;
-  color: white;
+  color: rgb(140, 32, 229);
 }
 
 .zoom {
@@ -250,7 +258,7 @@ a {
   color: rgb(140, 32, 229);
 }
 .zoom:hover a {
-  color: rgb(140, 32, 229);
+  color: rgb(81, 35, 229);
 }
 
 .hide {
@@ -282,6 +290,47 @@ a {
   }
   .easy-to-catch {
     padding: 15%;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  footer {
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 18rem;
+    position: relative;
+  }
+  footer .gasaros {
+    font-family: "Petit Formal Script", cursive;
+  }
+  .footer-projects {
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+  }
+  .footer-projects .gasaros {
+    font-family: "Petit Formal Script", cursive;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    flex-wrap: wrap;
   }
 }
 .intro-text,

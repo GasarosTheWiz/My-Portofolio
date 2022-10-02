@@ -1,7 +1,8 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    padding: 4%;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    flex-wrap: wrap;
   }
   .grid-item {
 
@@ -10,7 +11,7 @@
     text-align: center;
     a{
         text-decoration: none;
-        color:white;
+        color:$purple;
     
     }
       
@@ -29,7 +30,7 @@
     transform: scale(1.5);
     color: $purple;
     a{
-        color: $purple;
+        color: $blue;
     }
   }
 
@@ -46,4 +47,5 @@
     color:white;
     text-align: center;
 }
+
 
