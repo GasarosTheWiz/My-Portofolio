@@ -13,13 +13,16 @@
     color: white;
     .promo{
       color:$purple;
-
+      cursor: none;
     }
+
   }
   
   h1 {
     font-size: $header1;
     padding-right:40rem;
+    
+
   }
 
   h2 {
@@ -40,8 +43,7 @@
   p{
     font-size: $header3;
     display: table-cell;
-
-    
+    cursor: none;
     
   }
   
@@ -52,7 +54,7 @@
   }
 
   p:hover{
-    transform: scale(1.8);
+    transform: scale(1.5);
     color: $purple;
   }
 
@@ -76,8 +78,21 @@
   }
  
 
-
-
+  .hide-logo{
+    display: none;
+  }
+  .clogo:hover{
+  
+    .dimi-logo{
+    display: none;
+  }
+    .hide-logo{
+    display: block;
+    color: $purple;
+    margin-right: 12rem;
+  }
+  }
+  
 
   footer{
     font-size: 2rem;

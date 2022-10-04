@@ -15,6 +15,7 @@ body {
 }
 body .promo {
   color: rgb(140, 32, 229);
+  cursor: none;
 }
 
 h1 {
@@ -41,6 +42,7 @@ h5 {
 p {
   font-size: 2rem;
   display: table-cell;
+  cursor: none;
 }
 
 ul {
@@ -49,7 +51,7 @@ ul {
 }
 
 p:hover {
-  transform: scale(1.8);
+  transform: scale(1.5);
   color: rgb(140, 32, 229);
 }
 
@@ -70,6 +72,19 @@ p:hover {
   transform: scale(1.2);
 }
 
+.hide-logo {
+  display: none;
+}
+
+.clogo:hover .dimi-logo {
+  display: none;
+}
+.clogo:hover .hide-logo {
+  display: block;
+  color: rgb(140, 32, 229);
+  margin-right: 12rem;
+}
+
 footer {
   font-size: 2rem;
   padding: 1rem;
@@ -87,7 +102,6 @@ footer .gasaros {
 .main-head {
   margin: 0 0 0 auto;
   background: solid black;
-  left: 0%;
   position: relative;
 }
 
@@ -185,7 +199,7 @@ a {
   text-align: center;
   flex-wrap: wrap;
   position: relative;
-  padding-top: 15%;
+  padding-top: 11%;
   padding-left: 10%;
 }
 
@@ -200,7 +214,6 @@ a {
   padding-right: 40%;
 }
 
-.github:hover,
 .linkedin:hover {
   transform: scale(1.3);
 }
@@ -236,6 +249,7 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  padding-top: 6%;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -250,7 +264,7 @@ a {
 }
 
 .zoom {
-  padding: 50px;
+  padding: 30px;
   transition: transform 0.2s;
   width: 200px;
   height: 200px;
@@ -258,7 +272,7 @@ a {
 }
 
 .zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
   color: rgb(140, 32, 229);
 }
 .zoom:hover a {
