@@ -101,12 +101,28 @@
     flex-direction:row;
     justify-content: space-between;
     width: 18rem;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    
+    
     .gasaros{
       font-family: 'Petit Formal Script' , cursive ;
       
     }
   }
+
+  .footer-projects{
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 18rem;
+    position: absolute;
+    bottom: 0%;
+    .gasaros{
+      font-family: 'Petit Formal Script' , cursive ;
+   }
+  }
+
 
   
