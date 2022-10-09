@@ -65,14 +65,34 @@ $text: rgb(255, 255, 255);
   }
     
 } 
-@media screen and (max-width: 1750px) {
+
+
+
+
+@media screen and(max-width:1100px){  
+  .hero-introduction {
+    margin-left: 20%;
+  }
+    
+} 
+
+
+@media screen and(max-width:1300px){  
+  .hero-introduction {
+    margin-left: 25%;
+  }
+    
+} 
+
+@media screen and(max-width:900px){  
+  .hero-introduction {
+    margin-left: 2%;
+  }
   html{
-  font-size: 53%;
+    font-size: 50%;
   }
-  .hero-introduction{
-    margin-left: 3%;
-  }
-}
+    
+} 
 
 .intro-text,
 .intro-images {
